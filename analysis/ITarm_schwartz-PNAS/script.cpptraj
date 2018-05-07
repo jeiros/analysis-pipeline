@@ -1,0 +1,4 @@
+parm WT_uP_apo.prmtop
+trajin trajs/WT/apo/uP/run-006_imaged_superposed.nc 537 537
+trajout neighbour1.pdb
+run

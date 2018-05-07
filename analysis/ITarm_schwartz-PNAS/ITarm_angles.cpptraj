@@ -1,0 +1,17 @@
+
+vector mycTnIH1   :291@CA :327@CA  # My cTnI H1 definition
+vector mycTnIH2   :338@CA :383@CA  # My cTnI H2 definition
+
+vector mycTnTH1   :164@CA :180@CA  # My cTnT H1 definition
+vector mycTnTH2   :186@CA :231@CA  # My cTnT H2 definition
+
+vector cTnTT2     :232@CA :248@CA  # T2 site
+
+
+vectormath vec1 mycTnIH1 vec2 mycTnIH2 dotangle out cTnI-angle.dat
+run
+vectormath vec1 mycTnTH1 vec2 mycTnTH2 dotangle out cTnT-angle-H1-H2.dat
+run
+vectormath vec1 mycTnTH2 vec2 cTnTT2 dotangle out cTnT-angle-H2-T2.dat
+run
+quit
